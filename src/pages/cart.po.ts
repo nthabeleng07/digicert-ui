@@ -1,5 +1,5 @@
 import { fixture } from "../hooks/fixture";
-import { test, expect } from '@playwright/test';
+import { expect } from '@playwright/test';
 
 export default class CartPage {
 
@@ -20,7 +20,7 @@ export default class CartPage {
     }
 
     async assert_no_item_in_cart(){
-       const numItem = await fixture.page.locator('.cart_item').all
-       expect(numItem.length === 0); 
+       const numItem = await fixture.page.locator('.cart_item').all()
+       expect(numItem.length).toEqual(Number(0))
     }
 }

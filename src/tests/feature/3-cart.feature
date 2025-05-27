@@ -2,6 +2,7 @@ Feature: Add to cart
 
 @addToCart
 @RemoveFromCart
+@Checkout
   Scenario: Add a product to the cart and verify it's listed
    When I add an item to cart
    Then I click on shopping cart

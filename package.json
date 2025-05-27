@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "ui": "npx cucumber-js tests --tags=@RemoveFromCart"
+    "ui": "npx cucumber-js tests --tags=@Checkout"
   },
   "keywords": [],
   "author": "",
