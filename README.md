@@ -16,8 +16,6 @@
 5. `npx playwright install` to install the browser
 
 ### How to run tests:
-
-sanity tests:
 * `npm run ui` to run the UI tests
 
 #### How to add a new tag:
