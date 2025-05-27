@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "ui": "npx cucumber-js tests --tags=@login_incorrect_cred"
+    "ui": "npx cucumber-js tests --tags=@products_load"
   },
   "keywords": [],
   "author": "",

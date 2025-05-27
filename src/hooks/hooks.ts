@@ -1,11 +1,11 @@
-import {Before, After, Status} from '@cucumber/cucumber';
+import {BeforeAll, AfterAll, After, Status} from '@cucumber/cucumber';
 import {chromium, Browser, BrowserContext} from '@playwright/test';
 import { fixture } from './fixture';
 
 let browser : Browser;
 let context:  BrowserContext;
 
-Before(async function () {
+BeforeAll(async function () {
     browser = await chromium.launch({ headless: false, slowMo:500});
 
     context = await browser.newContext({})
@@ -22,8 +22,11 @@ After(async function({pickle, result}){
         const img = await fixture.page.screenshot({path: "./test-results/screenshots/" + pickle.name + ".png", type:"png"});
         this.attach(img, "image/png");
     }
+});
 
+AfterAll(async function () {
     await context.close();
     await browser.close();
-});
+    
+})
 
