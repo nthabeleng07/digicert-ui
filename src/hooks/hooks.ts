@@ -6,7 +6,7 @@ let browser : Browser;
 let context:  BrowserContext;
 
 Before(async function () {
-    browser = await chromium.launch({ headless: false});
+    browser = await chromium.launch({ headless: false, slowMo:500});
 
     context = await browser.newContext({})
 
@@ -14,9 +14,6 @@ Before(async function () {
 
     fixture.page = await browser.newPage(); // Create a new page inside context.
     await fixture.page.setViewportSize({width: 1920, height: 1080}); 
-
-    fixture.page.pause()
-
 });
 
 After(async function({pickle, result}){
