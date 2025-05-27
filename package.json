@@ -1,0 +1,20 @@
+{
+  "name": "digicert-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "ui": "npx cucumber-js tests --tags=@login"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.21"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "ts-node": "^10.9.2"
+  }
+}
