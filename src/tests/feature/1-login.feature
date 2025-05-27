@@ -3,7 +3,10 @@ Feature: Login Page
   Background:
     Given I am on the "https://www.saucedemo.com" page
 
-@login_correct_cred @products_load
+@login_correct_cred 
+@products_load 
+@addToCart 
+@RemoveFromCart
   Scenario: Login with standard_user and and validate successful login with correct credentials
     When I provide correct username "standard_user"
     When I provide correct password "secret_sauce"

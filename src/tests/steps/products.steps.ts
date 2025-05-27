@@ -17,3 +17,5 @@ Then('I should see all the products displayed', async () => {
 Then('I should see {string} products displayed', async (prodNum) => {
     await productPage.assert_numberOfProductsDisplayed(prodNum)
 })
+
+
