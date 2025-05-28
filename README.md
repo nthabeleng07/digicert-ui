@@ -22,10 +22,10 @@
   1. Create a new script or update existing script with the new tag in the `package.json` file
 
 ### Folder structure
-0. `src\pages` -> All the page objects (UI screen)
-1. `src\tests\features` -> write your UI features here
-2. `src\tests\steps` -> Your UI step definitions goes here
+0. `src\pages` -> Page objects (UI screen)
+1. `src\tests\features` -> UI features
+2. `src\tests\steps` -> UI step definitions
 3. `src\hooks\hooks.ts` -> Browser setup and teardown logic
-4. `src\hooks\fixture.ts` -> Simple way to share the page objects
+4. `src\hooks\fixture.ts` -> Shares the page objects
 5. `cucumber.json` -> UI tests configuration
 6. `package.json` -> Contains all the dependencies
