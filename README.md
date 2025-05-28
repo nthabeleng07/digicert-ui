@@ -19,7 +19,7 @@
 * `npm run ui` to run the UI tests
 
 #### How to add a new tag:
-* Create a new script or update existing script with the new tag in the `package.json` file
+* Create a new script or update the existing script `(ui)` with the new tag on line `6` in the `package.json` file
 
 #### Test cases to run:
 1. @login_correct_cred, @login_incorrect_cred
