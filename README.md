@@ -5,7 +5,7 @@
 
 ### Reports
 
-1. Default Cucumber report
+* Default Cucumber report
 
 ### Setup:
 
@@ -19,13 +19,19 @@
 * `npm run ui` to run the UI tests
 
 #### How to add a new tag:
-  1. Create a new script or update existing script with the new tag in the `package.json` file
+* Create a new script or update existing script with the new tag in the `package.json` file
+
+#### Test cases to run:
+1. @login_correct_cred, @login_incorrect_cred
+2. @products_load
+3. @addToCart, @RemoveFromCart
+4. @Checkout
 
 ### Folder structure
-0. `src\pages` -> Page objects (UI screen)
-1. `src\tests\features` -> UI features
-2. `src\tests\steps` -> UI step definitions
-3. `src\hooks\hooks.ts` -> Browser setup and teardown logic
-4. `src\hooks\fixture.ts` -> Shares the page objects
-5. `cucumber.json` -> UI tests configuration
-6. `package.json` -> Contains all the dependencies
+1. `src\pages` -> Page objects (UI screen)
+2. `src\tests\features` -> UI features
+3. `src\tests\steps` -> UI step definitions
+4. `src\hooks\hooks.ts` -> Browser setup and teardown logic
+5. `src\hooks\fixture.ts` -> Shares the page objects
+6. `cucumber.json` -> UI tests configuration
+7. `package.json` -> Contains all the dependencies
