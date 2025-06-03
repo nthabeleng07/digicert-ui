@@ -1,6 +1,6 @@
 import { Given, Then, When} from "@cucumber/cucumber";
-import ProductPage from "../../pages/products.po";
-import LoginPage from "../../pages/login.po";
+import ProductPage from "../../../pages/products.po";
+import LoginPage from "../../../pages/login.po";
 
 const productPage = new ProductPage()
 const loginPage = new LoginPage();

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "ui": "npx cucumber-js tests --tags=@Checkout"
+    "ui": "npx cucumber-js tests  --config=ui.cucumber.json --tags=@Checkout",
+    "api": "npx cucumber-js tests  --config=api.cucumber.json --tags=@createUser"
   },
   "keywords": [],
   "author": "",

@@ -1,5 +1,5 @@
 import { Given, Then, When} from "@cucumber/cucumber";
-import CartPage from "../../pages/cart.po";
+import CartPage from "../../../pages/cart.po";
 
 const cartPage = new CartPage()
 

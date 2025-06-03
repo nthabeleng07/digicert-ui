@@ -1,6 +1,6 @@
 import { Given, Then, When} from "@cucumber/cucumber";
-import LoginPage from "../../pages/login.po";
-import { fixture } from "../../hooks/fixture";
+import LoginPage from "../../../pages/login.po";
+import { fixture } from "../../../hooks/fixture";
 
 const loginPage = new LoginPage();
 
