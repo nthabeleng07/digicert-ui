@@ -2,7 +2,6 @@ import { Given, Then, When} from "@cucumber/cucumber";
 import { fixture } from "../../../hooks/fixture";
 import { APIResponse } from "@playwright/test";
 import {expect} from "@playwright/test";
-import { json } from "stream/consumers";
 
 let response: APIResponse;
 let responseBody: any;
@@ -11,8 +10,7 @@ let name: string;
 let job: string;
 
 Given('I prepare a request with name {string} and job {string}', async (name:string, job:string) => {
- //  this.name = name;
- //   this.job = job;
+
 });
 
 Given("I send a POST request to {string}", async (url) => {
